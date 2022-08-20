@@ -55,18 +55,20 @@ const sr = ScrollReveal({
 sr.reveal('.section__title section__title--intro',{});
 sr.reveal('.section__title',{delay: 200});
 sr.reveal('.section__subtitle',{delay: 700});
-sr.reveal('.intro__img',{delay: 1400});
-sr.reveal('.about-me__img',{delay: 1400});
+sr.reveal('.intro__img',{delay: 1000});
+sr.reveal('.about-me__img',{delay: 1000});
 
-sr.reveal('.paragraph',{delay: 800});
-sr.reveal('.service',{delay: 800});
+sr.reveal('.paragraph',{delay: 1000});
+sr.reveal('.service',{delay: 1000});
+sr.reveal('.study',{delay: 1200});
+sr.reveal('.studys',{delay: 1000});
+// sr.reveal('.btn',{delay: 1000});
 
-sr.reveal('.btn',{delay: 1400});
 
-
-sr.reveal('.social-list',{interval: 300});
-sr.reveal('.footer__link',{delay: 300});
-sr.reveal('.logo__img',{interval: 300});
+sr.reveal('.social-list',{delay: 1000});
+sr.reveal('.footer__link',{delay: 1000});
+sr.reveal('.logo__img',{delay: 1000});
+sr.reveal('.thank__you',{delay: 1000});
 
 // audio
 var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);

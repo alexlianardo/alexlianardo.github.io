@@ -17,6 +17,8 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
+    --clr-light-company: #303030;
+    --clr-light-company-reverse: #fdfcfc;
     --p-body: #fff;
     --p-color: #303030;
     
@@ -39,6 +41,8 @@
     --clr-light: rgb(0, 0, 0);
     --clr-dark: #fdfcfc;
     --clr-accent: #16e0bd;
+    --clr-light-company: #fdfcfc;
+    --clr-light-company-reverse: #303030;
     --p-body: #fff;
     --p-color: #fff;
     
@@ -118,8 +122,13 @@ strong { font-weight: var(--fw-bold) }
     transition: transform 200ms ease-in-out;
 }
 
-.btn:hover {
+.btn,.btn_experience:hover {
     transform: scale(1.1);
+}
+
+.btn_experience {
+    margin-bottom: 35px;
+    margin-left: 35px;
 }
 
 /* Typography */
@@ -140,14 +149,17 @@ p {color: var(--p-body)}
     color: var(--p-color);
 }
 
+
 .section__title {
     margin-bottom: .25em;
+    color: #16e0bd;
 }
 
 .section__title--intro {
     font-weight: var(--fw-reg);
     transition-delay: 1s;
     transition-property: margin-right, color;
+    color: var(--clr-light-company);
 }
 
 .section__title--intro strong {
@@ -165,6 +177,14 @@ p {color: var(--p-body)}
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+}
+
+.section__subtitle--experience {
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    font-size: var(--fs-body);
+    color: var(--clr-light-company);
 }
 
 .section__subtitle--work {
@@ -334,6 +354,11 @@ header {
     }
 }
 
+.my-experiences {
+    background-color: var(--clr-light-company-reverse);
+    /* background-image: ; */ 
+}
+
 .my-study {
     /* filter: brightness(40%); */
     background-color: var(--clr-dark);
@@ -345,12 +370,26 @@ header {
     text-align: left;
 }
 
-.section__title--studys {
+.section__title--studys, .section__title--experiences {
     color: var(--clr-accent);
     position: relative;
 }
 
 .section__title--studys::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+.section__title--experiences::after {
     content: '';
     display: block;
     width: 2em;
@@ -409,6 +448,22 @@ header {
     margin: 0 auto;
     font-size: x-large;
 }
+
+.company {
+    font-weight: var(--fw-bold);
+    color: var(--clr-light-company);
+    text-decoration: none;
+}
+
+.company:hover {
+    opacity: .7;
+}
+
+.company_date {
+    color: var(--clr-light-company);
+    font-weight:normal;
+}
+
 
 @media (min-width: 800px) {
     .services {
@@ -502,6 +557,7 @@ header {
     overflow: hidden;
 }
 
+
 .portfolio__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
@@ -559,11 +615,6 @@ header {
     text-decoration: underline;
 }
 
-
-
-
-
-
 .social-list {
     list-style: none;
     display: flex;
@@ -602,46 +653,6 @@ header {
 .reveal.show:after {
     left:100%
 }
-
-/* table music */
-#table-music {
-    margin-left:10px
-    
-}
-
-audio::-webkit-media-controls-play-button{
-    background-color: var(--clr-accent);
-}
-audio::-webkit-media-controls-timeline-container{
-    background-color: var(--clr-dark);
-}
-audio::-webkit-media-controls-fullscreen-button{
-    background-color: var(--clr-dark);
-}
-
-.typewriter p {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid cyan; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    
-    animation: 
-      typing 5s steps(100, end),
-      blink-caret .75s step-end infinite;
-  }
-
-  .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid cyan; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    
-    animation: 
-      typing 5s steps(100, end),
-      blink-caret .75s step-end infinite;
-  }
 
   .typewriter strong {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
