@@ -1,4 +1,4 @@
-*::before,
+/* *::before,
 *::after {
     box-sizing: border-box;
 }
@@ -36,4 +36,4 @@ body {
 
 p {
     color: #fff;
-}
+} */
