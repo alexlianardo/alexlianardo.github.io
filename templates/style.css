@@ -151,9 +151,12 @@ h3 { font-size: var(--fs-h3); color: #fff; }
 p {color: var(--p-body)}
 
 .paragraph {
-    color: var(--p-color);
+    color: var(--clr-light-company);
 }
 
+p .paragraph {
+    color: var(--clr-light-company-reverse);
+}
 
 .section__title {
     margin-bottom: .25em;
@@ -184,7 +187,7 @@ p {color: var(--p-body)}
 
 .section__subtitle--about {
     background: var(--clr-accent);
-    padding: .25em 1em;
+    padding: 0.25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
@@ -217,6 +220,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    
 }
 
 .logo {
@@ -261,6 +265,7 @@ header {
 
 .dark-mode-toggle {
     cursor: pointer;
+    position: fixed;
 }
 
 .nav-toggle {
@@ -268,11 +273,11 @@ header {
     background: transparent;
     border: 0;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 1em;
     z-index: 1000;
-   
+    
 }
 
 .nav-open .nav {
@@ -552,7 +557,7 @@ div .experience {
     }
     
     .section__subtitle--about {
-        grid-column: 1 / -1;
+        grid-column: -1 / 1;
         grid-row: 2;
         position: relative;
         left: -1em;
@@ -564,8 +569,7 @@ div .experience {
     .about-me__img {
         grid-area: img;
         position: relative;
-        z-index: 2;
-        
+        z-index: 2;    
     }
 }
 
