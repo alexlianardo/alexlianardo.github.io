@@ -206,7 +206,7 @@ p {color: var(--p-body)}
 }
 
 .section__subtitle--work {
-    color: var(--clr-accent);
+    color: var(--clr-light-company);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
@@ -359,7 +359,7 @@ header {
         grid-area: img;
         min-width: 250px;
         position: relative;
-        z-index: 2;
+        z-index: 5;
     }    
     
     .section__subtitle--intro {
@@ -389,8 +389,13 @@ header {
     text-align: left;
 }
 
-.section__title--studys, .section__title--experiences {
+.section__title--studys {
     color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--experiences {
+    color: var(--clr-light-company);
     position: relative;
 }
 
@@ -521,7 +526,7 @@ div .experience {
     max-width: 100%;
     margin: 0 auto;
     max-height: 100%;
-    padding: 10%;
+    padding: 20%;
     /* background-color: var(--clr-black-white); */
 }
 
@@ -569,6 +574,10 @@ div .experience {
     background-color: var(--clr-light-company-reverse);
     color: var(--clr-light);
     text-align: center;    
+}
+
+.section__title--work {
+    color: var(--clr-light-company);
 }
 
 .portfolio {
