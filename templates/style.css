@@ -548,6 +548,7 @@ div .experience {
     
     .section__title--about {
         grid-area: title;
+        color: var(--clr-light-company);
     }
     
     .section__subtitle--about {
