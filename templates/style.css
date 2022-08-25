@@ -547,6 +547,37 @@ div .experience {
     transform: scale(1.5);
 }
 
+
+.company_logo_telkom {
+    float: right;
+    height:300px;
+    position: relative;
+    width:auto;
+    margin-right: 50%;
+    margin-top: 10%;
+
+}
+
+@media (max-width: 600px) {
+    .company_logo {
+        float: right;
+        height:10px;
+        position: relative;
+        width:auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .company_logo_telkom {
+        float: left;
+        position: relative;
+        width:auto;
+        height: 200px;
+        padding-left: 20%;
+        /* margin-top: 10%; */
+        /* margin-bottom: 10%; */
+    }
+}
+
 @media (min-width: 600px) {
     .about-me {
         display: grid;
@@ -585,6 +616,7 @@ div .experience {
         z-index: 5;    
         transform: scale(1.5);
     }
+
 
     .portfolio {
         display: grid;
@@ -686,7 +718,7 @@ div .experience {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-
+    /* size: 100%; */
 }
 
 .footer a { 
