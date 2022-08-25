@@ -130,6 +130,7 @@ strong { font-weight: var(--fw-bold) }
     transform: scale(1.1);
 }
 
+
 .btn_experience {
     margin-bottom: 35px;
     margin-left: 35px;
@@ -373,23 +374,22 @@ header {
         left: -1.5em;
         width: calc(100% );
     }
+
+  
 }
 
 .my-experiences {
     background-color: var(--clr-light-company-reverse);
-    /* background-image: ; */ 
 }
 
 .my-study {
-    /* filter: brightness(40%); */
-    /* background-color: var(--clr-dark); */
     background-image : url('../static/study-background.jpg');
     background-size: cover;
     
-    /* background-blend-mode: multiply; */
     color: var(--clr-light-dont-change);
     text-align: left;
 }
+
 
 .section__title--studys {
     color: var(--clr-accent);
@@ -617,6 +617,7 @@ div .experience {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-between;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 .portfolio-photos {
@@ -661,6 +662,19 @@ div .experience {
     width: 100px;
     height: auto;
     
+}
+
+.company_logo {
+    float:left; 
+    height:100px;
+    width:auto;
+    margin-bottom: 5%;
+}
+
+.container {
+    width:100%;
+    height:auto;
+    padding:0;
 }
 
 

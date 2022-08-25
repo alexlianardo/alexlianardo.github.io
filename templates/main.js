@@ -62,6 +62,7 @@ sr.reveal('.paragraph',{delay: 1000});
 sr.reveal('.service',{delay: 1000});
 sr.reveal('.study',{delay: 1200});
 sr.reveal('.studys',{delay: 1000});
+sr.reveal('.container',{delay: 1000});
 // sr.reveal('.btn',{delay: 1000});
 
 
