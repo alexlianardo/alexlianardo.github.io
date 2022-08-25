@@ -151,11 +151,8 @@ h3 { font-size: var(--fs-h3); color: #fff; }
 p {color: var(--p-body)}
 
 .paragraph {
-    color: var(--clr-light-company);
-}
-
-p .paragraph {
-    color: var(--clr-light-company-reverse);
+    color: var(--clr-dark);
+    font-size: var(--fs-h3);
 }
 
 .section__title {
@@ -374,7 +371,7 @@ header {
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: calc(100% + 1.5em);
+        width: calc(100% );
     }
 }
 
@@ -531,13 +528,23 @@ div .experience {
     max-width: 100%;
     margin: 0 auto;
     max-height: 100%;
-    padding: 20%;
+    padding: 10%;
     /* background-color: var(--clr-black-white); */
 }
 
 
 .about-me__img {
     box-shadow: var(--bs);
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+        box-shadow: var(--bs);
+    
+}
+
+.about-me__img:hover,
+.about-me__img:focus .about-me__img {
+    transform: scale(1.5);
 }
 
 @media (min-width: 600px) {
@@ -569,7 +576,27 @@ div .experience {
     .about-me__img {
         grid-area: img;
         position: relative;
-        z-index: 2;    
+        z-index: 5;    
+    }
+
+    .about-me__img:hover {
+        grid-area: img;
+        position: relative;
+        z-index: 5;    
+        transform: scale(1.5);
+    }
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: space-between;
+    }
+    
+    .portfolio-photos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: space-between;
+    
     }
 }
 
@@ -588,11 +615,16 @@ div .experience {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
+    margin-left: 5%;
 }
 
 .portfolio-photos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
+    margin-left: 5%;
+
 }
 
 .portfolio__item {
@@ -602,20 +634,23 @@ div .experience {
 
 
 .portfolio__img {
+    overflow: hidden;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+        box-shadow: var(--bs);
 }
 
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
+    
 }
 
 .portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
+.portfolio__img:focus .portfolio__img {
+    transform: scale(1.5);
+    /* opacity: 0.6; */
 }
 
 
@@ -699,14 +734,15 @@ div .experience {
 
   .typewriter strong {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid cyan; /* The typwriter cursor */
+    border-right: .15em solid var(--clr-light-company); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin: 0.5 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .005em; /* Adjust as needed */
     
     animation: 
       typing 5s steps(100, end),
-      blink-caret .75s step-end infinite;
+      blink-caret 2s step-end infinite;
+
   }
   
   /* The typing effect */
@@ -718,5 +754,5 @@ div .experience {
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    10% { border-color: --clr-dark; }
+    5% { border-color: var(--clr-light-company); }
   }

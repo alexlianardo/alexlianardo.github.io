@@ -70,6 +70,7 @@ sr.reveal('.footer__link',{delay: 1000});
 sr.reveal('.logo__img',{delay: 1000});
 sr.reveal('.thank__you',{delay: 1000});
 
+
 // audio
 var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   if (!isChrome){
