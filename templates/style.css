@@ -665,8 +665,8 @@ div .experience {
 }
 
 .company_logo {
-    float:left; 
-    height:100px;
+    float: right; 
+    height:120px;
     width:auto;
     margin-bottom: 5%;
 }
