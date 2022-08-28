@@ -156,6 +156,10 @@ p {color: var(--p-body)}
     font-size: var(--fs-h3);
 }
 
+.ask_me {
+    background-color: #2D4059;
+}
+
 .section__title {
     margin-bottom: .25em;
 }
@@ -264,6 +268,7 @@ header {
 .dark-mode-toggle {
     cursor: pointer;
     position: fixed;
+    z-index: 100;
 }
 
 .nav-toggle {
@@ -550,36 +555,42 @@ div .experience {
 
 .company_logo_telkom {
     float: right;
-    height:300px;
-    position: relative;
+    height:400px;
+    position: absolute;
     width:auto;
-    margin-right: 50%;
-    margin-top: 10%;
+    opacity: 25%;
+
+    /* margin-left: 5%; */
+    left: 25%;
+    margin-top: 8%;
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
     @media (max-height: 1400px) {
         .company_logo {
-            float: left;
-            height: 200px;
-            position: relative;
+            float: none;
+            height: 150px;
+            position: absolute;
+            top: cm;
+            z-index: -1;
             width:auto;
+            opacity: 25%;
             /* margin-top: 10%; */
             /* margin-bottom: 10%; */
         }
         .company_logo_telkom {
             float: left;
-            position: relative;
+            position: absolute;
             width:auto;
-            height: 200px;
-            padding-left: 20%;
-            margin-bottom: 10%;
-            /* margin-top: 10%; */
+            height: 300px;
+            margin-top: 40%;
+            opacity: 25%;
             /* margin-bottom: 10%; */
         }
     }
 }
+
 
 
 @media (min-width: 600px) {
@@ -660,7 +671,6 @@ div .experience {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-between;
-    margin-left: 5%;
 
 }
 
