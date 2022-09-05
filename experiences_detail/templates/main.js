@@ -72,9 +72,6 @@ sr.reveal('.logo__img',{delay: 1000});
 sr.reveal('.thank__you',{delay: 1000});
 
 
-//logo telkom
-document.getElementById('telkom_logo').setAttribute('draggable', false);
-
 // audio
 var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   if (!isChrome){

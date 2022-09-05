@@ -171,7 +171,6 @@ p {color: var(--p-body)}
     transition-delay: 1s;
     transition-property: margin-right, color;
     color: var(--clr-light-company);
-    padding-left: 2%;
 }
 
 .section__title--intro strong {
@@ -337,12 +336,12 @@ header {
 /*  Intro section  */
 
 .intro {
-    position: relative;
+    /* position: relative; */
     /* height: 100%; */
-    padding-left: 25%;
+    /* padding: 0; */
     /* margin: auto; */
     /* padding: auto; */
-    text-align: center;
+    
 }
 
 .intro__img {
@@ -379,7 +378,7 @@ header {
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: calc(100% + 3em );
+        width: calc(100% );
     }
 
 }
@@ -555,10 +554,11 @@ div .experience {
 
 .company_logo_telkom {
     float: right;
-    /* height:10px; */
+    height:400px;
     position: absolute;
     width:auto;
     opacity: 25%;
+
     /* margin-left: 5%; */
     left: 25%;
     margin-top: 8%;
@@ -569,17 +569,18 @@ div .experience {
     @media (max-height: 1000px) {
         .company_logo {
             float: none;
-            height: 250px;
+            height: 150px;
             position: relative;
             z-index: -1;
             width: auto;
+            opacity: 25%;
         }
         .company_logo_telkom {
             float: left;
             position: absolute;
             width:auto;
             height: 300px;
-            margin-top: 15%;
+            margin-top: 40%;
             opacity: 25%;
         }
     }

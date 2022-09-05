@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gojek</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <!-- buat normalize di tiap browser yang berbeda -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <!-- buat dapetin icon-icon unik di font awesome-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <!-- ini font yang dipake buat projek ini, bisa di cari di fonts.googleapis.com-->
+        <link rel="stylesheet" href="templates/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="dark-mode-toggle" id="dark-mode-toggle" title="Dark mode toggle">🌒</div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#photos" class="nav__link">My Photos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="experiences">         
+            <div class="experience">
+                <div class="container">
+                    <img src="https://1000logos.net/wp-content/uploads/2020/11/Gojek-Logo.png" class="company_logo" style="height: 200px;"> 
+                    <h3 class="section__subtitle--experience" style="font-size: 1.5rem; ">
+                    Data Analyst Intern 
+                    <p> </p>
+                    <a href="https://www.gojek.com/" target="_blank" class="company">
+                    Gojek
+                    </a>
+                    <p class="company_date">May 2022 - Aug 2022</p>
+                    </h3>
+                </div>
+                <p class="section__subtitle section__subtitle--experience">
+                    Focusing in Consumer Platform <br>
+                    I worked on several tasks related to several services in the Gojek application such as Go Car, Go Ride, Go Food, Go Car Xtra, 
+                    Go Car Hygienes, Go Car Bird, Go Blue Bird, and Go Ride EV. The tasks I did during my internship were:<br>
+                    1. Find out the number of conversations that happen in each order for the top-500 messages and group 
+                    the messages that have a similar topic or intent (clusterring).<br>
+                    2. Analyze the chat “balance” between drivers and customers and measure whether drivers are sending more chats to customers, or vice versa.<br>
+                    3. Estimate the scale of fraudulent, spam, and abusive messages and find the number of occurrences of these cases.<br>
+                    4. Labeling data for data scientists related to the intent classification model.<br>
+                    <br>
+                    In carrying out this task I use tools such as:<br>
+                    Data Analysis : <b>SQL, BigQuery, Python - Google Colab, and Google Spreadsheets</b><br>
+                    Data Visualization : <b>Google Data Studio</b></p>
+            </div> 
+        </div>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="templates/main.js"></script>      
+    </body>
+    <footer></footer>
+</html>
