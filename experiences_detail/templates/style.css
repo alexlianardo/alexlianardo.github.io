@@ -573,7 +573,7 @@ div .experience {
             position: relative;
             z-index: -1;
             width: auto;
-            opacity: 25%;
+            /* opacity: 25%; */
         }
         .company_logo_telkom {
             float: left;

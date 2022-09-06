@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gojek</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <!-- buat normalize di tiap browser yang berbeda -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <!-- buat dapetin icon-icon unik di font awesome-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <!-- ini font yang dipake buat projek ini, bisa di cari di fonts.googleapis.com-->
+        <link rel="stylesheet" href="templates/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="dark-mode-toggle" id="dark-mode-toggle" title="Dark mode toggle">🌒</div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="experiences">         
+            <div class="experience">
+                <div class="container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Telkom_University_Logo.svg/640px-Telkom_University_Logo.svg.png" class="company_logo"> 
+
+                <h3 class="section__subtitle--experience" style="font-size: 1.5rem;">Telecommunication Engineering<p> </p>
+                <a href="https://www.kimiafarma.co.id/" target="_blank" class="company">
+                TELKOM UNIVERSITY
+                </a>
+                <p class="company_date">August 2018 - August 2022</p>
+                </h3>
+                </div>
+                <a href="/experiences_detail/static/Thesis.pdf" download="Alex Lianardo Thesis" class="btn btn_experience">My Thesis</a>
+                <p class="section__subtitle section__subtitle--experience">
+                    Well mostly my education in here are talk about "Telecommunication" which is basically about how to communicate
+                    using devices such as phone or anything through a cable (like fiber optic), antenna, or radio.
+                    well not only "Telecommunication" but also "Electrical" things such as 
+                </p>
+            </div> 
+        </div>
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">Documentation</h2>
+            <p class="section__subtitle section__subtitle--work">through my education in here</p>
+            
+            <div class="portfolio">
+                    <img src="static/portfolio-08.jpg" alt="" class="portfolio__img">
+                    <img src="static/portfolio-09.jpg" alt="" class="portfolio__img">
+                    <img src="static/portfolio-10.jpg" alt="" class="portfolio__img">
+            </div>
+        </section>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="templates/main.js"></script>      
+    </body>
+    <footer></footer>
+</html>
